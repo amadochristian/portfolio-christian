@@ -1,8 +1,8 @@
 .container {
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #303030;
   line-height: 1.6;
-  background-color: #F8F3E8;
+  background-color: var(--light-bg);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -14,7 +14,7 @@
 /* Header Styles */
 .header {
   height: 250px;
-  background: #2b2b2b;
+  background: #303030;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -27,8 +27,8 @@
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #ffb33e;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.068);
+  border: 5px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
 }
 
 .profileImg {
@@ -43,7 +43,7 @@
   line-height: 0.8;
 }
 
-.header h1 {
+.headerTitle {
   color: #ffb33e;
   margin: 0;
   font-size: 2.8rem;
@@ -52,7 +52,7 @@
 }
 
 .objective {
-  color: #fff;
+  color: white;
   font-style: italic;
   font-weight: 300;
   margin: 10px 0 0;
@@ -72,8 +72,8 @@
   flex-shrink: 0;
   background: white;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.068);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   height: fit-content;
 }
 
@@ -81,42 +81,42 @@
   margin-bottom: 30px;
 }
 
-.aboutMe p {
+.aboutMeText {
   font-size: 0.95rem;
-  color: #777;
+  color: var(--text-light);
   margin-bottom: 20px;
 }
 
-h2 {
+.sectionTitle {
   font-size: 1.5rem;
-  color: #2b2b2b;
+  color: var(--secundary-color);
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 10px;
 }
 
-h2::after {
+.sectionTitle::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 50px;
   height: 3px;
-  background: #ffb33e;
+  background: var(--primary-color);
 }
 
 .educationItem {
   margin-bottom: 20px;
 }
 
-.educationItem h3 {
+.educationItemTitle {
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
 
-.educationItem p {
+.educationItemText {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-light);
 }
 
 /* Portfolio Section */
@@ -132,10 +132,10 @@ h2::after {
 }
 
 .portfolioCard {
-  background: #fff;
-  border-radius: 15px;
+  background: var(--white);
+  border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.068);
+  box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -163,14 +163,14 @@ h2::after {
   padding: 20px;
 }
 
-.portfolioInfo h3 {
+.portfolioInfoTitle {
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
 
-.portfolioInfo p {
+.portfolioInfoText {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-light);
 }
 
 /* Skills Section */
@@ -196,7 +196,7 @@ h2::after {
 }
 
 .skillPercent {
-  color: #777;
+  color: var(--text-light);
 }
 
 .skillBar {
@@ -208,14 +208,14 @@ h2::after {
 
 .skillProgress {
   height: 100%;
-  background: #ffb33e;
+  background: var(--primary-color);
   border-radius: 5px;
 }
 
 /* Experience Section */
 .expTitle {
   font-size: 1.8rem;
-  color: #2b2b2b;
+  color: var(--secundary-color);
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 15px;
@@ -228,34 +228,35 @@ h2::after {
   left: 0;
   width: 80px;
   height: 4px;
-  background: #ffb33e;
+  background: var(--primary-color);
 }
 
 .job {
-  background: #fff;
+  background: var(--white);
   padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.068);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   margin-bottom: 25px;
 }
 
-.job h4 {
+.jobTitle {
   font-size: 1.2rem;
-  color: #2b2b2b;
+  color: var(--secundary-color);
   margin-bottom: 5px;
 }
 
-.job p em {
+.jobPeriod {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-light);
+  font-style: italic;
 }
 
-.job ul {
+.jobList {
   margin-top: 15px;
   padding-left: 20px;
 }
 
-.job li {
+.jobListItem {
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
@@ -285,7 +286,7 @@ h2::after {
   position: absolute;
   top: 20px;
   right: 30px;
-  color: #fff;
+  color: var(--white);
   font-size: 35px;
   font-weight: bold;
   cursor: pointer;
@@ -293,8 +294,8 @@ h2::after {
 
 /* Footer */
 .footer {
-  background: #2b2b2b;
-  color: #fff;
+  background: #303030;
+  color: white;
   padding: 30px 10%;
   text-align: center;
 }
@@ -307,19 +308,19 @@ h2::after {
 }
 
 .socialLink {
-  color: #fff;
+  color: var(--white);
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .socialLink:hover {
-  color: #ffb33e;
+  color: var(--primary-color);
 }
 
 .downloadBtn {
   display: inline-block;
   background: #ffb33e;
-  color: #2b2b2b;
+  color: #303030;
   padding: 12px 25px;
   border-radius: 30px;
   text-decoration: none;
@@ -330,7 +331,7 @@ h2::after {
 }
 
 .downloadBtn:hover {
-  background: #fff;
+  background: white;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(255, 179, 62, 0.4);
 }
@@ -385,7 +386,7 @@ h2::after {
     margin-left: 0;
   }
 
-  h1 {
+  .headerTitle {
     font-size: 2rem;
   }
 

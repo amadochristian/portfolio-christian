@@ -140,7 +140,7 @@ export default function Portfolio() {
             <img src="/profile.jpg" alt="Christian Amado" className={styles.profileImg} />
           </div>
           <div className={styles.headerText}>
-            <h1>Christian Amado</h1>
+            <h1 className={styles.headerTitle}>Christian Amado</h1>
             <p className={styles.objective}>Web Designer / Desenvolvimento / Front-end jr.</p>
           </div>
         </header>
@@ -148,15 +148,15 @@ export default function Portfolio() {
         <div className={styles.mainContainer}>
           <aside className={styles.sidebar}>
             <div className={styles.aboutMe}>
-              <p>Olá! meu nome é Christian, tenho 28 anos. Estou sempre em busca de inovação e aprendizado para trazer soluções modernas e eficazes aos projetos que assumo.</p>
+              <p className={styles.aboutMeText}>Olá! meu nome é Christian, tenho 28 anos. Estou sempre em busca de inovação e aprendizado para trazer soluções modernas e eficazes aos projetos que assumo.</p>
             </div>
 
             <div className={styles.education}>
-              <h2>Formação Acadêmica</h2>
+              <h2 className={styles.sectionTitle}>Formação Acadêmica</h2>
               {education.map((edu, index) => (
                 <div key={index} className={styles.educationItem}>
-                  <h3>{edu.degree}</h3>
-                  <p>{edu.institution} {edu.period}</p>
+                  <h3 className={styles.educationItemTitle}>{edu.degree}</h3>
+                  <p className={styles.educationItemText}>{edu.institution} {edu.period}</p>
                 </div>
               ))}
             </div>
@@ -168,15 +168,15 @@ export default function Portfolio() {
                 <div key={item.id} className={styles.portfolioCard} onClick={() => openModal(item.full)}>
                   <img src={item.thumb} alt={item.title} className={styles.portfolioImg} />
                   <div className={styles.portfolioInfo}>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <h3 className={styles.portfolioInfoTitle}>{item.title}</h3>
+                    <p className={styles.portfolioInfoText}>{item.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             <div className={styles.skillsSection}>
-              <h2>Habilidades</h2>
+              <h2 className={styles.sectionTitle}>Habilidades</h2>
               {skills.map((skill, index) => (
                 <div key={index} className={styles.skillItem}>
                   <div className={styles.skillHeader}>
@@ -199,11 +199,11 @@ export default function Portfolio() {
               <h3 className={styles.expTitle}>Experiência Profissional</h3>
               {jobs.map((job, index) => (
                 <div key={index} className={styles.job}>
-                  <h4>{job.title}</h4>
-                  <p><em>{job.company} / {job.period}</em></p>
-                  <ul>
+                  <h4 className={styles.jobTitle}>{job.title}</h4>
+                  <p className={styles.jobPeriod}><em>{job.company} / {job.period}</em></p>
+                  <ul className={styles.jobList}>
                     {job.responsibilities.map((resp, i) => (
-                      <li key={i}>{resp}</li>
+                      <li key={i} className={styles.jobListItem}>{resp}</li>
                     ))}
                   </ul>
                 </div>
