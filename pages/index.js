@@ -114,7 +114,7 @@ export default function Portfolio() {
     },
     {
       title: 'Assistente em Marketing',
-      company: 'Dokar Veículos',
+      company: 'Dokar Veículos, concessionária autorizada Volkswagen',
       period: '2016 - 2017',
       responsibilities: [
         'Campanhas Meta Ads para venda de Veículos',
