@@ -42,7 +42,7 @@ export default function Portfolio() {
   const portfolioItems = [
     { 
       id: 1,
-      title: 'Site Institucional', 
+      title: 'Site Institucional TESTE', 
       description: 'WordPress, Elementor', 
       thumb: 'https://via.placeholder.com/400x300',
       full: 'https://via.placeholder.com/800x600'
