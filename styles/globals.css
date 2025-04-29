@@ -1,14 +1,41 @@
+  /* Global Styles */
+:root {
+  --primary: #6c5ce7;
+  --primary-dark: #5649c0;
+  --secondary: #00cec9;
+  --accent: #fd79a8;
+  --dark: #1e1e2c;
+  --darker: #151521;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --gray-dark: #495057;
+  --success: #00b894;
+  --warning: #fdcb6e;
+  --danger: #d63031;
+}
+
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #1a1a1a;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align:baseline;
+  list-style:none;
+  border:0
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--darker);
+  color: var(--light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
