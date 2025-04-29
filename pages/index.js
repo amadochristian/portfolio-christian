@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Grimper.Digital - Marketing de Alta Performance</title>
+        <title>Grimper.Digital - Maarketing de Alta Performance</title>
         <meta name="description" content="Agência de marketing digital focada em tráfego pago, criação de sites e redes sociais." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
