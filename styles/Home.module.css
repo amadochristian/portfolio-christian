@@ -1,0 +1,63 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff88;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+  }
+  
+  .section {
+    max-width: 800px;
+    margin: 3rem 0;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .sectionDark {
+    background: #000;
+    color: #0f0;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    max-width: 800px;
+  }
+  
+  .ctaSection {
+    margin-top: 3rem;
+  }
+  
+  .whatsappButton {
+    display: inline-block;
+    background: #25d366;
+    color: #111;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  .whatsappButton:hover {
+    background: #1ebd5a;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
